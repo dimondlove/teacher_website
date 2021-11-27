@@ -1,6 +1,12 @@
+body {
+	background-color: #EBEDE6;
+}
+
+
 /*
 **HEADER**
 */
+
 
 .nav-logo {
 	margin-right: 15px;
@@ -25,10 +31,27 @@
 	background-color: #0d6efd;
 }
 
+.nav-link:hover {
+	transition: background-color 1s ease-out,
+				color 0.3s ease-out;
+}
+
+
+/*
+**SLIDER**
+*/
+
+
+.carousel-inner {
+	border: 10px solid #fff;
+	border-radius: 10px;
+}
+
 
 /*
 **Для адаптивности**
 */
+
 
 @media (max-width: 1400px) {
 
