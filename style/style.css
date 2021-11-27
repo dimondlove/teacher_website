@@ -1,0 +1,38 @@
+/*
+HEADER
+*/
+
+.nav-logo {
+	margin-right: 15px;
+}
+
+.nav-text {
+	font-size: 30px;
+}
+
+.nav-link {
+	margin: 0 15px;
+	padding: 10px 15px !important;
+	color: #0d6efd !important;
+	text-decoration: none;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.nav-link.active {
+	color: #fff !important;
+	background-color: #0d6efd;
+	border: 0;
+    border-radius: 10px;
+}
+
+@media (max-width: 1400px) {
+
+	.nav-text {
+		font-size: 20px;
+	}
+
+	.nav-link {
+		margin: 0 5px;
+	}
+
+}
