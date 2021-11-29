@@ -113,9 +113,15 @@ main {
 */
 
 
+.blog {
+
+}
+
+
 .blog_img {
 	float: left;
 	margin-right: 15px;
+	width: 500px;
 }
 
 
@@ -170,6 +176,11 @@ footer {
 
 	.navbar-brand {
 		margin-bottom: 0;
+	}
+
+	.blog_img {
+		text-align: center;
+		width: 300px;
 	}
 
 }
