@@ -109,6 +109,17 @@ main {
 
 
 /*
+**BLOG**
+*/
+
+
+.blog_img {
+	float: left;
+	margin-right: 15px;
+}
+
+
+/*
 **FOOTER**
 */
 
