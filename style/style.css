@@ -1,7 +1,21 @@
+html,
+body {
+	height: 100%;
+}
+
 body {
 	background-color: #EBEDE6;
 }
 
+.wrapper {
+	display: flex;
+	flex-direction: column !important;
+	min-height: 100%;
+}
+
+main {
+	flex: 1 0 auto;
+}
 
 /*
 **HEADER**
@@ -41,6 +55,9 @@ body {
 **SLIDER**
 */
 
+.carousel {
+	margin-bottom: 24px;
+}
 
 .carousel-inner {
 	border: 10px solid #fff;
@@ -52,7 +69,7 @@ body {
 }
 
 .block {
-	margin-top: 24px;
+	margin-bottom: 24px;
 	text-align: justify;
 	background-color: #fff;
 	padding: 20px;
@@ -70,6 +87,26 @@ body {
 	width: 40rem;
 }
 
+/*
+**PORTFOLIO**
+*/
+
+
+.portfolio {
+	display: flex;
+	flex-direction: column;
+}
+
+.photo {
+	float: right;
+	text-align: center;
+	padding: 0 0 10px 20px;
+}
+
+.description-label {
+	font-weight: bold;
+}
+
 
 /*
 **FOOTER**
@@ -83,6 +120,7 @@ footer {
 	text-align: center;
 	font-size: 15px;
     color: #fff;
+    flex: 0 0 auto;
 }
 
 
@@ -121,6 +159,24 @@ footer {
 
 	.navbar-brand {
 		margin-bottom: 0;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.photo {
+		float: none;
+		text-align: center !important;
+	}
+
+	.portfolio {
+		align-items: center;
+		text-align: center;
+	}
+
+	.description-entry {
+		text-align: left;
 	}
 
 }
