@@ -135,6 +135,27 @@ main {
 
 
 /*
+**VISITOR**
+*/
+
+
+.visitor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.visitor-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.visitor-container textarea {
+	margin-bottom: 16px;
+}
+
+
+/*
 **FOOTER**
 */
 

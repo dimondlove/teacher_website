@@ -10,11 +10,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style/style.css">
 
-	<title>Обучающимся</title>
+	<title>Гостевая книга</title>
 </head>
 <body>
 
 	<div class="wrapper">
+		
 		<!-- Header -->
 
 		<header class="d-flex flex-wrap justify-content-center bg-light mb-4">
@@ -35,7 +36,7 @@
 								<a href="portfolio.html" class="nav-link">Портфолио</a>
 							</li>
 							<li class="nav-item">
-								<a href="visitor.html" class="nav-link">Гостевая книга</a>
+								<a href="visitor.html" class="nav-link active">Гостевая книга</a>
 							</li>
 							<li class="nav-item">
 								<a href="blog.html" class="nav-link">Блог</a>
@@ -44,7 +45,7 @@
 								<a href="documents.html" class="nav-link">Документы</a>
 							</li>
 							<li class="nav-item">
-								<a href="students.html" class="nav-link active">Обучающимся</a>
+								<a href="students.html" class="nav-link">Обучающимся</a>
 							</li>
 						</ul>
 					</div>
@@ -52,37 +53,32 @@
 			</nav>
 		</header>
 
+
 		<!-- Main -->
 
 		<main class="container">
 
 			<div class="row main-row">
-				<section class="block col-12 students">
-					<h2>Обучающимся</h2>
-					<div class="students-item">
-						<h4>Учебный процесс</h4>
-						<a href="#">Информация об организации учебного процесса</a>
-					</div>
-					<div class="students-item">
-						<h4>Раписание занятий</h4>
-						<a href="#">Раписание учебных занятий и сессий на факультетах ВГУИТ</a>
-					</div>
-					<div class="students-item">
-						<h4>Стипендия</h4>
-						<a href="#">Информация о стипендиях и иных видах материальной поддержки</a>
-					</div>
-					<div class="students-item">
-						<h4>Общежития</h4>
-						<a href="#">Сведения об общежитиях ВГУИТ</a>
-					</div>
-					<div class="students-item">
-						<h4>Платные образовательные услуги</h4>
-						<a href="#">Информация о порядке оказания платных образовательных услуг во ВГУИТ</a>
-					</div>
-					<div class="students-item">
-						<h4>Справочник первокурсника</h4>
-						<a href="#">Памятка первокурснику ВГУИТ</a>
-					</div>
+				<section class="block col-12 visitor">
+					<h2>Форма обратной связи</h2>
+					<form action="" method="post">
+                        <fieldset class="visitor-container">
+                            <p>Имя<br>
+                                <input pattern="^[А-Яа-яЁё\s]+$" required title="Только кириллические буквы." type="text" name="name" class="text-border" size="45">
+                            </p>
+                            <p>Фамилия<br>
+                                <input type="text" pattern="^[А-Яа-яЁё\s]+$" required title="Только кириллические буквы." name="surname" class="text-border" size="45">
+                            </p>
+                            <p>Отчество<br>
+                                <input type="text" pattern="^[А-Яа-яЁё\s]+$" required title="Только кириллические буквы." name="patronymic" class="text-border" size="45">
+                            </p>
+                            <p>E-mail<br>
+                                <input name="E-mail" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required class="text-border" size="45">
+                            </p>
+                            <textarea rows="10" cols="45" id="msg" class="txtarea" name="msg" placeholder="Ваше сообщение:"></textarea>
+                            <button type="submit" class="btn btn-success">Отправить</button> 
+                        </fieldset>        
+                    </form>
 				</section>
 			</div>
 
@@ -93,6 +89,7 @@
 		<footer class="container-fluid bg-secondary">
 			<p>Контактная информация: <br> Тел.: <b>8-920-469-29-32</b> <br> e-mail: <b>Leskova.ev78@inbox.ru</b></p>
 		</footer>
+
 	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
